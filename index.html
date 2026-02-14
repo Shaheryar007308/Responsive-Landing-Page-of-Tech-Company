@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techify – Smart SaaS Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="container">
+  <h1>Techify</h1>
+  <button class="toggle-btn" onclick="toggleTheme()">Toggle Theme</button>
+</header>
+
+<!-- HERO -->
+<section class="hero container">
+  <h2>Boost Your Productivity with Techify</h2>
+  <p>All-in-one SaaS platform to manage projects and automate workflows.</p>
+  <button onclick="alert('Welcome to Techify!')">Get Started</button>
+</section>
+
+<!-- FEATURES -->
+<section class="container">
+  <h2 class="section-title">Features</h2>
+  <div class="features-grid">
+    <div class="card" data-message="Super fast performance!">
+      ⚡ <h3>Fast Performance</h3>
+      <p>Optimized for speed and efficiency.</p>
+    </div>
+    <div class="card" data-message="Top level security!">
+      🔒 <h3>Secure Data</h3>
+      <p>Enterprise grade encryption.</p>
+    </div>
+    <div class="card" data-message="Cloud access worldwide!">
+      ☁️ <h3>Cloud Based</h3>
+      <p>Access anytime, anywhere.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="container">
+  <h2 class="section-title">Testimonials</h2>
+  <div class="testimonials">
+    <div class="card" data-message="Sarah improved team productivity by 40%!">
+      “Amazing product!” — Sarah
+    </div>
+    <div class="card" data-message="Ali loves the simplicity!">
+      “Very reliable and easy.” — Ali
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="container">
+  <h2 class="section-title">Pricing</h2>
+  <div class="pricing">
+    <div class="card" data-message="Basic plan selected!">
+      <h3>Basic</h3>
+      <div class="price">$0</div>
+      <p>For individuals</p>
+    </div>
+    <div class="card" data-message="Pro plan selected!">
+      <h3>Pro</h3>
+      <div class="price">$19/mo</div>
+      <p>For teams</p>
+    </div>
+    <div class="card" data-message="Enterprise plan selected!">
+      <h3>Enterprise</h3>
+      <div class="price">$49/mo</div>
+      <p>For companies</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Start Your Free Trial Today</h2>
+  <button onclick="openModal()">Sign Up Now</button>
+</section>
+
+<!-- SIGNUP MODAL -->
+<div class="modal" id="signupModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <h2>Create Account</h2>
+    <form id="signupForm">
+      <input type="text" id="name" placeholder="Full Name">
+      <div class="error" id="nameError"></div>
+
+      <input type="email" id="email" placeholder="Email Address">
+      <div class="error" id="emailError"></div>
+
+      <input type="password" id="password" placeholder="Password">
+      <div class="error" id="passError"></div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
