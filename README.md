@@ -55,7 +55,12 @@ Media queries are used to ensure proper spacing and alignment across different s
 
 ## 📂 Project Structure
 
-
+Landing-Page/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
 ---
 
 ## 🎯 Learning Objectives
